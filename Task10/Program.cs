@@ -14,8 +14,7 @@ int OutSecondDigit(int Digit)
     int firstDigit = Digit/100;
     int secondDigit = (Digit - firstDigit*100)/10;
     int thirdDigit = Digit % 10;
-    //return (firstDigit*10+thirdDigit);
     return (secondDigit);
 }
 
-Console.WriteLine(OutSecondDigit (Digit));
+Console.WriteLine("Вторая цифра введенного числа: " + OutSecondDigit (Digit));
